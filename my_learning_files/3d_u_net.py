@@ -70,7 +70,6 @@ def run_unet_3d_examples():
     # ----------------------------------------------------
     # Łączy cechy lokalne (enkoder Swin Transformer 3D) z dekoderem typu UNet
     model_swin = SwinUNETR(
-        img_size=(96, 96, 96),  # Wymagane podanie dokładnego rozmiaru wejścia dla Swin Transformer
         in_channels=1,
         out_channels=2,
         feature_size=48,  # Rozmiar cech początkowych
